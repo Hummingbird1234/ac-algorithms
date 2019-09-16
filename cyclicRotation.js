@@ -14,6 +14,22 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
+//Input: 2 inputs, an array and a number 
+//Output:an array (with the numbers rearranged)
+//Tool: loop- the loop will run for the number of rotations that we want the arrau to go through
+//shift,unshift,push and pop methods to work with arrays, we want to use them to get the last element in the array and move it to the beginning each time the loops runs
+//Output the array one the loop has finished
 function cyclicRotation(arr, rotation){
-    //Your code here...
+    
+function rotate( arr , rotation ){
+    for (var i=0; i<rotation; i++){
+   var temp = arr.pop();
+    arr.unshift( temp );
+     
+    }
+     return arr;
+   }
+   //Test
+   var result= rotate([3, 8, 9, 7, 6],2)
+   console.log( result);
 }
