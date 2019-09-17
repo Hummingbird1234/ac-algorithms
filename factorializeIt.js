@@ -7,8 +7,30 @@
 
 // Check out Arithmetic Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
+//input:a number
+//output: a number, the factorial of that number which means the product of all the numbers between 1 and that number
+//use a variable to store the output (the product) 
+//Multiplication operator(*)
+//Is there a Javacript method that calculates a factorial?
+//Loop: we need to start at 1 and end at the number that is the parameter, and instead of adding each time in the loop, we can multiply 
+
+
 function factorializeIt(num) {
   //your code here
+  var total= 1;
+function factorialize(num){
+for (var i = 1; i <= num; i++) {
+  
+  total *= i;
+ 
+  
+  
+}
+   return total;
+}
+ 
+var result= factorialize(100);
+console.log(result);
 }
 
 factorializeIt(5);
