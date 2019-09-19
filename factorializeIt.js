@@ -17,20 +17,17 @@
 
 function factorializeIt(num) {
   //your code here
-  var total= 1;
-function factorialize(num){
-for (var i = 1; i <= num; i++) {
-  
-  total *= i;
- 
-  
-  
-}
-   return total;
-}
- 
-var result= factorialize(100);
-console.log(result);
+
+  function factorialize(num){
+    var total= 1;
+    for (var i = 1; i <= num; i++) {
+      total *= i; 
+  }
+    return total;
+  }
+   
+  var result= factorialize(3);
+  console.log(result);
 }
 
 factorializeIt(5);

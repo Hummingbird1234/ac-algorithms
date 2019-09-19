@@ -25,6 +25,31 @@ console.log(result) // "1-3"
 
 **/
 
-function dashInsert(str) {
+//input: a number
+//output: a string, with dashes between the odd numbers
+//create a variable the string
+//create a variable to store the transformation od the number to an array of numbers, by first turning into a string, tools:.string().split("")
+//create a for loop to go through each of the numbers in array
+//need a conditional statement that test if the number is odd && if the number after it is odd
+//if true , I want to add the number and the dash to the string
+//if false, I want to just add the number 
 	// Your code
-}
+	function dashes(num){
+		var str = "";
+		var arr = num.toString().split("");
+	 
+		for(i = 0; i < arr.length; i++){
+			if(arr[i] % 2 === 1 && arr[i+1] % 2 === 1){
+				str += arr[i] + '-';            
+			}else{
+				str += arr[i];
+			}
+		}
+		// console.log(arr); to verify results
+		// console.log(str); verify results
+		return str;
+	}
+	
+	
+	var result= (dashes(11344746362));
+	console.log(result);
