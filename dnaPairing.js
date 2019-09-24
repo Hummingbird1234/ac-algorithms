@@ -10,8 +10,35 @@
 
 //The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
+
+//input:array with a string
+//output:pairs of string with arrangement 
+//tools:split() , for loops,conditional statements, .push(), 
+//var with an empty array to store the arrays i will push
 function pairElement(str) {
   //your code here
+  function pairElement(str) {
+    //your code here
+    var output=[];
+    var array=str.split("");
+    for (var i = 0; i < array.length; i++){
+    if (array[i]=== "A") {
+      output.push(["A","T"]);
+    } else if(array[i]=== "C") {
+      output.push(["C","G"]);
+    } else if(array[i]=== "T") {
+      output.push(["T","A"]);
+    } else if(array[i]=== "G") {
+      output.push(["G","C"]);
+    }
+      
+    }      
+    return output;
+  }
+     var result= pairElement("AGCG");
+     console.log(result);
+  
+  
 }
 
 pairElement("GCG");
